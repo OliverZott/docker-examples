@@ -109,6 +109,7 @@ celerybeat.pid
 .venv
 env/
 venv/
+**/venv/
 **/FlaskExample/flask_venv/
 ENV/
 env.bak/
@@ -137,3 +138,7 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# IDES
+# JetBrains
+.idea

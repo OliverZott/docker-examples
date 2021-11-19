@@ -23,7 +23,9 @@ https://flask.palletsprojects.com/en/2.0.x/cli/
 
 - In IDE set working-directory (`FlaskExample`)
 - Or in Shell:
-  > $env:FLASK_APP = "hello"     
+
+  > $env:FLASK_APP = "hello"  
   > flask run
 
+  - if file named `app.py`, no env-var needed. just `flask run`
 

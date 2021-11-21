@@ -26,8 +26,9 @@ https://flask.palletsprojects.com/en/2.0.x/cli/
 - In IDE set working-directory (`FlaskExample`)
 - In Shell:
 
-  > $env:FLASK_APP = "hello"  
-  > flask run
+  > export FLASK_APP=app    
+  > export FLASK_ENV=development    
+  > flask run    
 
   - if file named `app.py`, no env-var needed. just `flask run`
 
@@ -36,9 +37,17 @@ https://flask.palletsprojects.com/en/2.0.x/cli/
 
 
 ------------------------------------------------------------
-# Docker
+# Docker-Image
 In terminal (directory of DOCKERFILE) run
 - `docker build . -t image_name`  ... **-t** for tag
 - check: `docker images`
 - run: `docker run image_name`
 
+Docker hub repo: https://hub.docker.com/repository/docker/dasmuesli/minimum_flask_app
+
+
+
+
+------------------------------------------------------------
+# Docker run 
+- `docker run -e APP_NAME=Scotty flask_startrek-star_trek`
